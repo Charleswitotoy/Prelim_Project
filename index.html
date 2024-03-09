@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div>
+        <header>
+            <div>
+                <img src="img/atlasfox-high-resolution-logo-transparent.png" alt="cannot load">
+            </div>
+            <ul>
+                <li><a href="#section0">Home</a></li>
+                <li><a href="#section1">Recipes</a></li>
+                <li><a href="#section2" onclick="about_toggle()">About</a></li>
+                <li><a href="#section3">Contact</a></li>
+                <li><a href="#section4">Subscriptions</a></li>
+                <button>
+                    Sign-up
+                </button>
+                <button>
+                    Login
+                </button>
+            </ul>
+        </header>
+
+        <div id="section0">
+            <div class="entrance">
+                <div class="text">
+                    <h1 >
+                        Awaken Your Inner Chef
+                    </h1>
+                </div>
+            </div>
+            <div>
+                <img src="img/recipe_bg.jpg" alt="cannot load">
+            </div>
+        </div>
+
+        <div id="section1">
+            <div class="container2" data-aos="fade-down">
+                <button class="box" style="text-align: center;" onclick="toggle1()">
+                    <h1>
+                        CHICKEN ADOBO
+                    </h1>
+                    <img src="img/adobo.avif" alt="cannot load">
+                </button>
+
+                <button class="box" style="text-align: center;" onclick="toggle2()">
+                    <h1>
+                        CHICKEN CURRY
+                    </h1>
+                    <img src="img/curry1.jpg" alt="cannot load">
+                </button>
+
+                <button class="box" style="text-align: center;" onclick="toggle3()">
+                    <h1>
+                        SINIGANG
+                        NA 
+                        BABOY
+                    </h1>
+                    <img src="img/sinigang.jpg" alt="cannot load">
+                </button>
+
+                <button class="box" style="text-align: center;" onclick="toggle4()">
+                    <h1>
+                        TINOLA
+                        <br>
+                        <br>
+                    </h1>
+                    <img src="img/tinola.jpg" alt="cannot load">
+                </button>
+
+                <button class="box" style="text-align: center;" onclick="toggle5()">
+                    <h1>
+                        LUMPIA
+                        <br>
+                        <br>
+                    </h1>
+                    <img src="img/lumpia.jpg" alt="cannot load">
+                </button>
+            </div>
+        </div>>
+        <div class="adobo_popup" id="adobo_popup">
+            <h1>CHICKEN ADOBO</h1>
+            <div class="toflex">
+                <div>
+                    <img src="img/adobo.avif" alt="cannot load" class="popupimg">
+                </div>
+
+                <div class="popup_ul">
+                    <ul class="ingredients_ul">
+                        <h3>Ingredients</h3>
+                        <li>2 tbsp canola oil</li>
+                        <li>6 cloves garlic crushed</li>
+                        <li>1 pc onion, sliced</li>
+                        <li>1 kilogram chicken cut ups</li>
+                        <li>2 tbsp vinegar</li>
+                        <li>1/4 cup soy sauce</li>
+                        <li>1 cup water</li>
+                        <li>2 pcs bay leaves</li>
+                        <li>1 tsp whole black peppercorns, slightly crushed</li>
+                        <li>2 pc Knorr chicken cubes</li>
+                        <li>1 tsp brown sugar packed</li>
+                        <li>Option: 1 cup kale or spinach</li>
+                    </ul>
+                    <ul class="procedure_ul">
+                        <h3>Procedure</h3>
+                        <li>Heat oil in pan and sauté garlic and onions. Then add chicken to the 
+                            pan and sear on all sides, until you have a little browning in the chicken skin.</li>
+                        <li>Pour in vinegar, soy sauce and water. Add bay leaves, pepper and Knorr Chicken Cubes. 
+                            Bring to a boil over high heat then reduce heat to simmer, but do not cover the pan. Continue to simmer for 10 mins.</li>
+                        <li>Remove chicken pieces from sauce and fry in another pan until nicely browned.</li>
+                        <li>Put back fried chicken pieces into sauce. Add sugar and let simmer again for another 10 minutes or 
+                            until sauce has thickened. Serve warm.</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btndone" href="#section1" onclick="toggle1()">Done</a>
+        </div>
+
+        <div class="curry_popup" id="curry_popup">
+            <h1>CHICKEN CURRY</h1>
+            <div class="toflex">
+                <div>
+                    <img src="img/curry1.jpg" alt="cannot load" class="popupimg">
+                </div>
+                <div class="popup_ul">
+                    <ul class="ingredients_ul">
+                        <h3>Ingredients</h3>
+                        <li>3 tbsp oil</li>
+                        <li>1 kilogram chicken cut into bite-sized pieces</li>
+                        <li>3 cloves garlic, minced</li>
+                        <li>1 medium onion, chopped</li>
+                        <li>2 inches ginger, minced</li>
+                        <li>1 pc Knorr Chicken Cubes 10 g</li>
+                        <li>2 tbsp curry powder</li>
+                        <li>1 pack (40 g) Knorr Ginataang Gulay Mix</li>
+                        <li>2 cups water</li>
+                        <li>1 pc carrot, cubed</li>
+                        <li>2 pcs potatoes, diced</li>
+                        <li>salt and pepper to taste</li>
+                    </ul>
+                    <ul class="procedure_ul">
+                        <h3>Procedure</h3>
+                        <li>In a medium-sized pot over medium heat, pour the oil. Saute the garlic until browned. Add the onions and ginger. Saute the chicken pieces and let brown on all sides.</li>
+                        <li>Add the Knorr Chicken Cube and curry powder. Saute for a few minutes, add the Knorr Ginataang Gulay Mix and water. Add the potatoes and the carrots. Let it simmer for 15 minutes covered. Then let it simmer again for 10 minutes until the sauce is thick. Season with salt and pepper.</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btndone" href="#section1" onclick="toggle2()">Done</a>
+        </div>
+
+        <div class="sinigang_popup" id="sinigang_popup">
+            <h1>SINIGANG NA BABOY</h1>
+            <div class="toflex">
+                <div>
+                    <img src="img/sinigang.jpg" alt="cannot load" class="popupimg">
+                </div>
+                <div class="popup_ul">
+                    <ul class="ingredients_ul">
+                        <h3>Ingredients</h3>
+                        <li>2 tbsp canola oil</li>
+                        <li>6 cloves garlic crushed</li>
+                        <li>1 pc onion, sliced</li>
+                        <li>1 kilogram chicken cut ups</li>
+                        <li>2 tbsp vinegar</li>
+                        <li>1/4 cup soy sauce</li>
+                        <li>1 cup water</li>
+                        <li>2 pcs bay leaves</li>
+                        <li>1 tsp whole black peppercorns, slightly crushed</li>
+                        <li>2 pc Knorr chicken cubes</li>
+                        <li>1 tsp brown sugar packed</li>
+                        <li>Option: 1 cup kale or spinach</li>
+                    </ul>
+                    <ul class="procedure_ul">
+                        <h3>Procedure</h3>
+                        <li>In a pot over medium heat, combine pork and enough water to cover. Bring to a boil, skimming scum that accumulates on top. 
+                            Once broth clears, add tomatoes, onion, and fish sauce. Lower heat and simmer for about 1 to 1 ½ hours or until meat is tender, adding more water as necessary to maintain about 8 cups. 
+                            Add gabi and cook for about 4 to 6 minutes or until tender. 
+                            Add chili peppers and radish.</li>
+                        <li>Continue to simmer for about 2 to 3 minutes.
+                            Add long beans. Continue to cook for about 2 minutes.
+                            Add eggplant and okra and cook for another 1 to 2 minutes.</li>
+                        <li>Season with salt and pepper to taste. Add bok choy and continue to cook for about 1 minute. 
+                            Serve hot.</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btndone" href="#section1" onclick="toggle3()">Done</a>
+        </div>
+
+        <div class="tinola_popup" id="tinola_popup">
+            <h1>TINOLA</h1>
+            <div class="toflex">
+                <div>
+                    <img src="img/tinola.jpg" alt="cannot load" class="popupimg">
+                </div>
+                <div class="popup_ul">
+                    <ul class="ingredients_ul">
+                        <h3>Ingredients</h3>
+                        <li>1 tbsp cooking oil</li>
+                        <li>1 pc onion, small -sized, chopped</li>
+                        <li>2 cloves garlic, chopped</li>
+                        <li>1 pc ginger, cut into strips</li>
+                        <li>½ kilo chicken, cut into 8 pcs</li>
+                        <li>4 cups water</li>
+                        <li>2 pcs Knorr chicken cubes</li>
+                        <li>1 pc chayote or 1 pc small - sized green papaya, sliced</li>
+                        <li>2 stalks moringa leaves</li>
+                    </ul>
+                    <ul class="procedure_ul">
+                        <h3>Procedure</h3>
+                        <li>Get a pot and bring it up to medium heat before pouring in the oil. Drop in the onions, garlic and ginger and sauté slowly for about 2 minutes or until you can smell the lovely aroma.
+                            It is time to drop in the chicken pieces and stir until it turns white or light brown in color.</li>
+                        <li>Pour in the water and add your Knorr Chicken Broth cubes. Bring this to a simmer until chicken is tender and cooked through.</li>
+                        <li>You can now add your sayote or green papaya and cook until tender. 
+                            Dahon ng sili is added at the last stage to ensure leaves (and nutrients) don’t dry up. Give this a minute then it is done.
+                        </li>
+                </div>
+            </div>
+            <a class="btndone" href="#section1" onclick="toggle4()">Done</a>
+        </div>
+
+        <div class="lumpia_popup" id="lumpia_popup">
+            <h1>LUMPIA</h1>
+            <div class="toflex">
+                <div>
+                    <img src="img/lumpia.jpg" alt="cannot load" class="popupimg">
+                </div>
+                <div class="popup_ul">
+                    <ul class="ingredients_ul">
+                        <h3>Ingredients</h3>
+                        <li>1/2 kilogram ground pork</li>
+                        <li>1/2 cup singkamas, finely chopped</li>
+                        <li>1/4 cup carrots, finely chopped</li>
+                        <li>1/4 cup green onions, finely chopped</li>
+                        <li>1/8 cup celery (equiv. to 2 Tbsp)</li>
+                        <li>1 tbsp oyster sauce</li>
+                        <li>1/2 tsp ground pepper</li>
+                        <li>2 tsps sesame oil</li>
+                        <li>3 tbsps Lady's Choice mayonnaise</li>
+                        <li>lumpia wrappers</li>
+                        <li>cooking oil for deep frying</li>
+                    </ul>
+                    <ul class="procedure_ul">
+                        <h3>Procedure</h3>
+                        <li>Combine ground pork, singkamas, carrots, green onions   and celery in a medium bowl. Then, add oyster sauce, salt   and pepper, sesame oil and 3 Tbsp of Lady’s Choice  Mayonnaise; mix well.</li>
+                        <li>Spoon about 1 tablespoon of the mixture into each lumpia   wrapper. Roll tightly. Seal ends of the wrapper with water.</li>
+                        <li>Deep fry until golden brown. Serve hot.</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btndone" href="#section1" onclick="toggle5()">Done</a>
+        </div>
+
+
+        <script>
+            function toggle1(){
+                var blur = document.getElementById('section1')
+                blur.classList.toggle('active')
+                var adobo_popup = document.getElementById('adobo_popup')
+                adobo_popup.classList.toggle('active')
+            }
+
+            function toggle2(){
+                var blur = document.getElementById('section1')
+                blur.classList.toggle('active')
+                var curry_popup = document.getElementById('curry_popup')
+                curry_popup.classList.toggle('active')
+            }
+
+            function toggle3(){
+                var blur = document.getElementById('section1')
+                blur.classList.toggle('active')
+                var sinigang_popup = document.getElementById('sinigang_popup')
+                sinigang_popup.classList.toggle('active')
+            }
+
+            function toggle4(){
+                var blur = document.getElementById('section1')
+                blur.classList.toggle('active')
+                var tinola_popup = document.getElementById('tinola_popup')
+                tinola_popup.classList.toggle('active')
+            }
+            
+            function toggle5(){
+                var blur = document.getElementById('section1')
+                blur.classList.toggle('active')
+                var lumpia_popup = document.getElementById('lumpia_popup')
+                lumpia_popup.classList.toggle('active')
+            }
+            function about_toggle(){
+                var animate = document.getElementById('section2')
+                animate.classList.toggle('active')
+                var section2 = document.getElementById('section2')
+                section2.classList.toggle('active')
+            }
+        </script>
+        <div id="section2">
+            <div class="about_paragraph" data-aos="fade-right">
+                <h1>
+                    About Our Website
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat libero imperdiet est dictum, ut porttitor nunc faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In purus arcu, rhoncus eu velit eget, malesuada pretium massa. Donec pharetra a lorem sit amet faucibus. Suspendisse ut maximus massa, nec posuere tellus. Integer sapien libero, gravida ut dui sit amet, scelerisque pretium nibh. Suspendisse potenti. Donec at nibh purus. Nulla sapien mi, auctor quis nisi ut, elementum volutpat magna. Vivamus neque augue, pretium sit amet ligula et, tempor rhoncus orci. Vivamus scelerisque arcu in hendrerit elementum.
+                </p>
+            </div>
+            <div class="about_container_image" data-aos="fade-left">
+                <img src="img/aboutimg1.jpg" alt="">
+                <img src="img/aboutimg2.jpg" alt="">
+                <img src="img/aboutimg3.jpg" alt="">
+                <img src="img/aboutimg4.jpg" alt="">
+            </div>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 2000,
+                });
+            </script>
+        </div>
+
+        <div id="section3">
+            <h1>Contact</h1>        
+        </div>
+
+        <div id="section4">
+            <h1>Subsriptions</h1>
+        </div>
+    </div>
+</body>
+</html>
